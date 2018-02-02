@@ -1,0 +1,18 @@
+<div class="editor">
+  <div class="toolbar">
+    <div class="files">
+      <a class="file"
+         ng-click="$ctrl.currFile = conf "
+         ng-repeat="conf in $ctrl.files"
+         ng-class="$ctrl.getMenuClass(conf.name)">{{ conf.name }}</a>
+    </div>
+    <div class="folder"><i class="material-icons"
+         title="{{$ctrl.config.folding.foldingTips}}"
+         ng-click="$ctrl.toggleFolderFont()">{{$ctrl.config.folding.foldingFont}}</i></div>
+  </div>
+  <div class="editor-container"
+       ng-class="$ctrl.config.folding.foldingFont">
+    <div class="ace-editor" ui-ace="{onLoad:$ctrl.aceOnLoad()}">
+    </div>
+  </div>
+</div>

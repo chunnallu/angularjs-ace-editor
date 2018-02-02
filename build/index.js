@@ -6,7 +6,7 @@ import gulpInject from "gulp-inject";
 import gulp from "gulp";
 import {conf} from "./conf";
 
-gulp.task("index",["move-index-to-dist","script","style"],()=>{
+gulp.task("index",["move-html-to-dist","script","style"],()=>{
 	//移动到文件到dist
 	let jsSource = gulp.src(`${conf.frontend.dist}/app.bundle.js`,{read:false});
 	let cssSource = gulp.src(`${conf.frontend.dist}/**/*.css`,{read:false});
@@ -22,8 +22,8 @@ gulp.task("index",["move-index-to-dist","script","style"],()=>{
 		.pipe(gulp.dest(`${conf.frontend.dist}`))
 })
 
-gulp.task("move-index-to-dist",function(){
-	return gulp.src(`${conf.frontend.src}/index.html`)
+gulp.task("move-html-to-dist",function(){
+	return gulp.src(`${conf.frontend.src}/**/*.html`)
 		.pipe(gulp.dest(`${conf.frontend.dist}`));
 })
 

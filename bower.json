@@ -23,8 +23,8 @@
     "angular-ui-router": "^1.0.11",
     "angular-resource": "^1.6.6",
     "normalize-css": "^7.0.0",
-    "angular-ui-ace": "bower"
-
+    "angular-ui-ace": "bower",
+    "angular-material": "^1.1.6"
   },
   "overrides": {
     "ace-builds": {

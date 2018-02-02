@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>测试ace</title>
+    <title>ACE 组件</title>
     <!-- bower:css -->
     <!-- endbower -->
     <!-- inject:css -->
     <!-- endinject -->
 </head>
-<body ng-app="calculatingApp" ng-controller="appcontroller as ctrl" >
+<body ng-app="ace" ng-controller="appcontroller as ctrl" >
 
 <h1>测试ace</h1>
-
-<div ui-ace></div>
+<kd-ace files="ctrl.fileList"
+        is-folding="false"></kd-ace>
 
 <!-- bower:js -->
 <!-- endbower -->
