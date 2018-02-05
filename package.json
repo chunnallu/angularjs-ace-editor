@@ -1,5 +1,5 @@
 {
-  "name": "ace",
+  "name": "ace-editor",
   "version": "1.0.0",
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -20,8 +20,7 @@
   "scripts": {
     "prestart": "yarn",
     "postinstall": "bower install --allow-root",
-    "serve": "gulp serve:watch",
-    "start": "gulp serve:prod",
+    "start": "gulp serve:watch",
     "build": "gulp build"
   },
   "dependencies": {

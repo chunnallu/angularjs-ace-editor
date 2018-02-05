@@ -7,7 +7,6 @@ export default angular
     .module(
         'ace.editors',
         [
-          'ngMaterial',
           'ui.ace'
         ])
     .component('kdAce', AceEditorComponent)

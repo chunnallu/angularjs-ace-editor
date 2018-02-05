@@ -1,6 +1,6 @@
 {
-  "name": "tncts",
-  "description": "tncts website",
+  "name": "ace editor",
+  "description": "an angularjs file editor base on ace editor",
   "main": "",
   "authors": [
     "lcl"
@@ -16,15 +16,10 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^3.2.1",
-    "bootstrap": "^3.3.7",
     "ace-builds": "^1.3.0",
     "angular": "^1.6.6",
-    "angular-ui-router": "^1.0.11",
-    "angular-resource": "^1.6.6",
-    "normalize-css": "^7.0.0",
     "angular-ui-ace": "bower",
-    "angular-material": "^1.1.6"
+    "material-design-icons": "^3.0.1"
   },
   "overrides": {
     "ace-builds": {
@@ -37,29 +32,15 @@
         "src-min-noconflict/ext-language_tools.js"
       ]
     },
+    "material-design-icons":{
+      "main":[
+        "iconfont/material-icons.css"
+      ]
+    },
     "angular": {
       "main": [
         "angular.min.js"
       ]
-    },
-    "angular-resource": {
-      "main": [
-        "angular-resource.min.js"
-      ]
-    },
-    "angular-ui-router": {
-      "main": [
-        "./release/angular-ui-router.min.js"
-      ]
-    },
-    "bootstrap": {
-      "main": [
-        "./dist/css/bootstrap.min.css",
-        "./dist/js/bootstrap.min.js"
-      ]
-    },
-    "jquery": {
-      "main": "dist/jquery.min.js"
     }
   }
 }
